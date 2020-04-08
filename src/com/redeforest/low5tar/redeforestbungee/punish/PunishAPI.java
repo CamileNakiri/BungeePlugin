@@ -309,11 +309,11 @@ public class PunishAPI {
 	@SuppressWarnings("deprecation")
 	public static void punirJogador(String nome, CommandSender px, String tipo, String prova, String motivo, String data, int dias, int horas, int minutos) {
 		if (tipo.equals("MUTE") && checkMutin(nome)) {
-			px.sendMessage("§cEste usuário já está mutado por '" + getMotivoMUTE(nome) + "'.");
+			px.sendMessage("Â§cEste usuÃ¡rio jÃ¡ estÃ¡ mutado por '" + getMotivoMUTE(nome) + "'.");
 			return;
 		}
 		if (tipo.equals("BAN") && checkBanin(nome)) {
-			px.sendMessage("§cEste usuário já está punido por '" + getMotivoBAN(nome) + "'.");
+			px.sendMessage("Â§cEste usuÃ¡rio jÃ¡ estÃ¡ punido por '" + getMotivoBAN(nome) + "'.");
 			return;
 		}
 		String autor = px.getName();
@@ -354,8 +354,8 @@ public class PunishAPI {
 				ServerInfo i = Main.getInstance().getProxy().getServers().get(s);
 				for (ProxiedPlayer todos : i.getPlayers()) {
 					todos.sendMessage("");
-					todos.sendMessage(" §c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
-					todos.sendMessage(" §c* Motivo: " + motivo);
+					todos.sendMessage(" Â§c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
+					todos.sendMessage(" Â§c* Motivo: " + motivo);
 					todos.sendMessage("");
 				}
 			}
@@ -365,8 +365,8 @@ public class PunishAPI {
 			ServerInfo i = Main.getInstance().getProxy().getServers().get(s);
 			for (ProxiedPlayer todos : i.getPlayers()) {
 				todos.sendMessage("");
-				todos.sendMessage(" §c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
-				todos.sendMessage(" §c* Motivo: " + motivo + " - " + prova);
+				todos.sendMessage(" Â§c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
+				todos.sendMessage(" Â§c* Motivo: " + motivo + " - " + prova);
 				todos.sendMessage("");
 			}
 		}
@@ -410,10 +410,10 @@ public class PunishAPI {
 			for (String s : Main.getInstance().getProxy().getServers().keySet()) {
 				ServerInfo i = Main.getInstance().getProxy().getServers().get(s);
 				for (ProxiedPlayer todos : i.getPlayers()) {
-					if (!todos.hasPermission("whyze.punir")) continue;
+					if (!todos.hasPermission("com.redeforest.bungee.punir")) continue;
 					todos.sendMessage("");
-					todos.sendMessage(" §c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
-					todos.sendMessage(" §c* Motivo: " + motivo);
+					todos.sendMessage(" Â§c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
+					todos.sendMessage(" Â§c* Motivo: " + motivo);
 					todos.sendMessage("");
 				}
 			}
@@ -422,10 +422,10 @@ public class PunishAPI {
 		for (String s : Main.getInstance().getProxy().getServers().keySet()) {
 			ServerInfo i = Main.getInstance().getProxy().getServers().get(s);
 			for (ProxiedPlayer todos : i.getPlayers()) {
-				if (!todos.hasPermission("whyze.punir")) continue;
+				if (!todos.hasPermission("com.redeforest.bungee.punir")) continue;
 				todos.sendMessage("");
-				todos.sendMessage(" §c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
-				todos.sendMessage(" §c* Motivo: " + motivo + " - " + prova);
+				todos.sendMessage(" Â§c* " + nome + " foi " + tipo.replace("MUTE", "mutado").replace("BAN", "punido") + " por " + autor + ".");
+				todos.sendMessage(" Â§c* Motivo: " + motivo + " - " + prova);
 				todos.sendMessage("");
 			}
 		}
@@ -471,7 +471,7 @@ public class PunishAPI {
 	public static void findandkick(String nome, String tipo) {
 		if (tipo.equals("BAN") && Main.getInstance().getProxy().getPlayer(nome) != null) {
 			ProxiedPlayer p = Main.getInstance().getProxy().getPlayer(nome);
-			p.disconnect("§c§lREDE WHYZE\n§1\n§cVocê foi punido do servidor.");
+			p.disconnect("Â§cÂ§lREDE FOREST\nÂ§1\nÂ§cVocÃª foi punido do servidor.");
 		}
 		tipo.equals("MUTE");
 	}
