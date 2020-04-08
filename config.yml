@@ -1,0 +1,34 @@
+=======================================
+========== FEITO POR LOW5TAR ==========
+========== PODE CONTER BUGS! ==========
+=======================================
+
+avisos:
+  b:
+  - ''
+  - '&6&l Encontrou algum usuário suspeito?'
+  - '&6 * &eUtilize o &6/reportar &epara denunciá-lo!'
+  - ''
+  c:
+  - ''
+  - '&b&l Acesse o TWITTER do servidor!'
+  - '&b * &eClique &b&lAQUI &epara acessar o twitter do servidor.'
+  - ''
+  - '{json}&fTwitter do servidor:'
+  - '{json}&7twitter.com/redeforest'
+  - '{url}https://twitter.com/redeforest'
+  d:
+  - ''
+  - '&b * [Twitter] &fÚltimas notícias do twitter &b[Clique para ver]'
+  - ''
+  - '{json}&fTwitter do servidor:'
+  - '{json}&7twitter.com/redeforest'
+  - '{url}https://twitter.com/redeforest'
+  a:
+  - ''
+  - '&9&l Acesse o DISCORD do servidor!'
+  - '&9 * &eClique &9&lAQUI &epara acessar o twitter do servidor.'
+  - ''
+  - '{json}&fDiscord do servidor:'
+  - '{json}&9discord.gg/forest'
+  - '{url}https://discord.gg/forest'

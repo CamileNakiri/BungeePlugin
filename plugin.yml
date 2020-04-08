@@ -1,0 +1,5 @@
+name: ForestBungee
+main: com.redeforest.low5tar.redeforestbungee.Main
+version: 1.0-SNAPSHOT
+author: [Low5tar]
+depends: [BungeePerms]
